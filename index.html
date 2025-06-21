@@ -72,6 +72,33 @@
             background-color: rgba(17, 24, 39, 0.8); /* gray-900 with opacity */
             border-left: 4px solid #2dd4bf; /* teal-400 */
             backdrop-filter: blur(5px);
+            padding: 1rem;
+            padding-right: 3.5rem; /* Make space for copy button */
+            border-radius: 0.75rem; /* rounded-lg */
+            overflow-x: auto;
+        }
+        
+        .prompt-box code {
+            white-space: pre-wrap; /* Allows text to wrap */
+            word-break: break-word; /* Breaks long words */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.875rem;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            background-color: rgb(55 65 81 / 0.7);
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+        .copy-btn:hover {
+            background-color: rgb(75 85 99 / 0.7);
+            transform: scale(1.1);
         }
         
         .link-cta {
@@ -103,6 +130,13 @@
         .pro-tip {
             background-color: rgba(79, 70, 229, 0.1);
             border-left: 4px solid #818cf8; /* indigo-400 */
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+        }
+        
+        .warning-box {
+            background-color: rgba(239, 68, 68, 0.1); /* red-500 with opacity */
+            border-left: 4px solid #ef4444; /* red-500 */
             padding: 1.5rem;
             border-radius: 0.75rem;
         }
@@ -187,45 +221,47 @@
                     Chapter 2: Siapin Mesin Uang Lo: Protokol Akses Eksklusif
                 </h2>
                 <div class="space-y-6 text-gray-300 leading-relaxed">
-                     <p>Oke, *straight to the point*. Veo3 ini barang baru, masih anget, dan belum semua orang bisa pake. Ini kesempatan lo buat jadi yang terdepan. Ikutin protokol ini, jangan sampe ada yang kelewat.</p>
-                     
-                     <div class="bg-gray-800/60 p-6 rounded-lg border border-indigo-400">
-                        <h4 class="font-bold text-lg text-white">JALUR HEMAT MENUJU CUAN</h4>
-                        <p class="mt-2">Gini, harga resmi langganan Google buat fitur Pro (Gemini Advanced) itu <strong class="line-through text-red-400">Rp 309.000 SEBULAN</strong>. Mahal? Banget. Apalagi buat yang baru mulai.</p>
-                        <p class="mt-3">Daripada duit lo abis percuma cuma buat langganan, mending investasikan buat peluang cuan yang lebih gede. Lewat gue, lo bisa dapet akses yang sama, tapi jauh lebih hemat.</p>
-                        <p class="mt-2">Cuma <strong class="text-teal-300 text-2xl font-bold">RP. 100.000</strong>, lo dapet:
-                        <ul class="list-disc list-inside mt-3 space-y-1 text-sm">
-                            <li>Akun private (bukan sharing!), email dari gue, password tinggal lo ganti.</li>
-                            <li>Garansi Full <strong class="text-white">15 Bulan</strong> (bukan trial sebulan doang!).</li>
-                            <li>Akses VEO3 + Gemini Pro + Google Drive 2TB. Komplit!</li>
-                        </ul>
-                        <a href="https://andsmptg.myscalev.com/gemini-veo-3-ai-pro" target="_blank" class="link-cta inline-block font-bold py-3 px-6 rounded-lg mt-6 text-center w-full sm:w-auto">
-                            Gasken, Ambil Akun Premium Lo Di Sini!
-                        </a>
-                     </div>
+                    <h3 class="text-xl font-semibold">Langkah Sat-Set Ngakses Google Veo</h3>
+                    <ol class="list-decimal list-inside space-y-3 mt-4">
+                        <li>Buka situs Gemini di <a href="https://gemini.google.com/" target="_blank" class="text-teal-400 hover:underline">https://gemini.google.com/</a>.</li>
+                        <li>Daftarin akun Google lo, atau login kalo udah punya.</li>
+                        <li>Kabar baiknya, lo bisa langsung pake <strong class="text-white">VEO 2 (versi gratis)</strong> tanpa perlu VPN. Klik aja tulisan "Video" di bawah kotak prompt.</li>
+                        <li>Buat unlock <strong class="text-teal-300">VEO 3</strong>, lo butuh akun Pro yang berbayar dan wajib pake VPN.</li>
+                    </ol>
 
-                     <h3 class="text-xl font-semibold !mt-8">Protokol Koneksi VPN (Kunci Pembuka Gerbang)</h3>
-                     <p>Karena Veo3 ini rilisnya masih di negara tertentu (US/UK), lo butuh "pindah negara" secara digital. Caranya pake VPN (Virtual Private Network). Jangan asal pake VPN gratisan dari Play Store, bisa-bisa data lo yang kesedot.</p>
-                     
-                     <div class="pro-tip">
-                        <p class="font-bold text-indigo-300 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.78l1.06 1.06a1 1 0 0 0 1.41 0l1.06-1.06a4 4 0 0 1 4.78 4.78 1 1 0 0 0 0 1.41l-1.06 1.06a4 4 0 0 1-4.78 4.78 1 1 0 0 0-1.41 0l-1.06-1.06a4 4 0 0 1-4.78-4.78z"/></svg>Apa yang Dicari dari VPN Bagus?</p>
-                        <ul class="list-disc list-inside mt-2 text-sm space-y-1">
-                           <li><strong>Kecepatan Tinggi:</strong> Biar proses generate gak lelet.</li>
-                           <li><strong>Server di US/UK:</strong> Ini wajib hukumnya.</li>
-                           <li><strong>No-Log Policy:</strong> Artinya mereka gak nyimpen data aktivitas online lo. Aman!</li>
-                           <li><strong>Rekomendasi Gue:</strong> NordVPN, ExpressVPN, Surfshark. Ada harga, ada kualitas.</li>
+                    <div class="pro-tip mt-8">
+                        <h4 class="font-bold text-lg text-indigo-200">JALUR PINTAS MENUJU AKUN PRO</h4>
+                        <p class="mt-2">Lo bisa aja ambil trial 1 bulan gratis dari Google, tapi abis itu tagihan jalan terus. Harga resminya? <strong class="line-through text-red-400">Rp 309.000 SEBULAN.</strong></p>
+                        <p class="mt-4">Mau jalur hemat? Lewat gue aja.</p>
+                        <p class="mt-3 text-center text-4xl font-black text-teal-300">CUMA RP. 100.000</p>
+                        <p class="text-center font-semibold text-white">BERLAKU 15 BULAN!</p>
+                        <ul class="list-disc list-inside mt-4 space-y-2 text-sm">
+                            <li><strong>Akun Private:</strong> Bukan sharing-sharing-an. Email dari gue, password tinggal lo ganti. Aman.</li>
+                            <li><strong>Garansi Full 15 Bulan:</strong> Ini bukan trial sebulan. Lo dapet garansi penuh.</li>
+                            <li><strong>Paket Komplit:</strong> Akses <strong class="text-white">VEO3</strong> + <strong class="text-white">Gemini Pro</strong> + <strong class="text-white">Google Drive 2TB</strong>. Semua private!</li>
                         </ul>
-                     </div>
-                     
-                     <h4 class="text-lg font-semibold !mt-6">Langkah-langkah Ajaib:</h4>
-                     <ol class="list-decimal list-inside space-y-2">
-                        <li>Download dan install salah satu VPN yang gue rekomendasiin.</li>
-                        <li>Buka aplikasinya, login, terus pilih server di <strong class="text-white">USA</strong> atau <strong class="text-white">United Kingdom</strong>.</li>
-                        <li>Kalo udah konek, baru buka tab Gemini Pro lo.</li>
-                        <li><strong class="text-red-400">PENTING:</strong> WAJIB refresh halaman browser lo (tekan F5 atau Ctrl+R). Voila! Fitur Veo3 bakal muncul.</li>
-                     </ol>
-                     
-                     <p>Masih bingung? Cek aja tutorial visualnya di sini: <a href="https://youtu.be/Gacd7-O6F60" target="_blank" class="text-teal-400 hover:underline">https://youtu.be/Gacd7-O6F60</a></p>
+                        <h4 class="font-bold text-lg text-indigo-200 mt-6">Cara Dapetinnya?</h4>
+                        <ol class="list-decimal list-inside space-y-2 mt-2 text-sm">
+                            <li>Buka link ini: <a href="https://saweria.co/andsmptg" target="_blank" class="text-teal-300 font-bold hover:underline">https://saweria.co/andsmptg</a></li>
+                            <li>Lakuin pembayaran/kasih dukungan sebesar <strong class="text-white">Rp 100.000</strong>.</li>
+                            <li>Pilih metode pembayaran yang lo suka, banyak pilihannya.</li>
+                            <li><strong class="text-white">Screenshot bukti bayar</strong>, terus kirim ke DM Instagram gue.</li>
+                            <li>Akun premium bakal langsung meluncur ke DM lo. Gampang, kan?</li>
+                        </ol>
+                    </div>
+
+                    <div class="warning-box mt-8">
+                        <h4 class="font-bold text-lg text-red-300 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> PENTING BANGET, BACA DULU!</h4>
+                        <ul class="list-disc list-inside mt-3 space-y-2 text-sm text-red-200">
+                            <li>VEO 3 <strong class="text-white">belum rilis resmi di Indonesia</strong>. WAJIB pake VPN dengan server <strong class="text-white">US atau UK</strong> buat ngakses.</li>
+                            <li>Soal <strong class="text-white">LIMIT GENERATE</strong>: Ini sepenuhnya kebijakan Google. Akun pro sekalipun bakal kena limit karena VEO 3 masih beta. Gak ada yang bisa prediksi limitnya (harian/mingguan).</li>
+                            <li>Pake VPN <strong class="text-white">cuma buat ngakses VEO 3</strong>. Kalo mau pake VEO 2 atau Gemini Chat, matiin VPN-nya biar gak lemot.</li>
+                            <li><strong class="text-white uppercase">TIDAK ADA UNLIMITED GENERATION UNTUK VEO 3!</strong> Kalo ada yang nawarin, itu udah pasti meragukan.</li>
+                            <li>Akun dari kami <strong class="text-white">100% baru dan original</strong>, masa aktif 15 bulan.</li>
+                            <li><strong class="text-white">Tidak ada garansi</strong> kalo akun kena limit, karena itu murni kebijakan dari Google, bukan kami.</li>
+                            <li>Dengan membeli, lo dianggap udah baca dan setuju sama semua poin ini. <strong class="text-white">No debat, no refund.</strong></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             
@@ -242,11 +278,11 @@
                      <p>Setiap kali mau generate, pastiin prompt lo ngikutin blueprint ini. Anggap ini checklist wajib.</p>
                      <img src="https://placehold.co/800x200/111827/a5b4fc?text=S-A-K-G-T+Blueprint" alt="[Blueprint SAKGT]" class="w-full h-auto rounded-xl my-6 border border-gray-700">
                      <ul class="list-disc list-inside space-y-2">
-                        <li><strong>S - Subjek:</strong> Siapa/apa fokusnya? <em class="text-gray-400">"Jangan bilang 'wanita', bilang 'wanita karir 30 tahunan berblazer'."</em></li>
-                        <li><strong>A - Aksi:</strong> Lagi ngapain? <em class="text-gray-400">"Jangan bilang 'lari', bilang 'jogging santai di sore hari'."</em></li>
-                        <li><strong>K - Konteks:</strong> Di mana & kapan? <em class="text-gray-400">"Jangan bilang 'di kota', bilang 'di trotoar SCBD pas jam pulang kantor'."</em></li>
-                        <li><strong>G - Gaya:</strong> Mood & estetikanya? <em class="text-gray-400">"Gaya sinematik dramatis, warna moody, atau gaya dokumenter?"</em></li>
-                        <li><strong>T - Teknis:</strong> Perintah buat "kameramen" AI. <em class="text-gray-400">"Pake drone shot, low-angle, atau handheld?"</em></li>
+                         <li><strong>S - Subjek:</strong> Siapa/apa fokusnya? <em class="text-gray-400">"Jangan bilang 'wanita', bilang 'wanita karir 30 tahunan berblazer'."</em></li>
+                         <li><strong>A - Aksi:</strong> Lagi ngapain? <em class="text-gray-400">"Jangan bilang 'lari', bilang 'jogging santai di sore hari'."</em></li>
+                         <li><strong>K - Konteks:</strong> Di mana & kapan? <em class="text-gray-400">"Jangan bilang 'di kota', bilang 'di trotoar SCBD pas jam pulang kantor'."</em></li>
+                         <li><strong>G - Gaya:</strong> Mood & estetikanya? <em class="text-gray-400">"Gaya sinematik dramatis, warna moody, atau gaya dokumenter?"</em></li>
+                         <li><strong>T - Teknis:</strong> Perintah buat "kameramen" AI. <em class="text-gray-400">"Pake drone shot, low-angle, atau handheld?"</em></li>
                      </ul>
 
                     <h3 class="text-xl font-semibold !mt-8">Teknik Tingkat Dewa: Bikin Karakter Ngobrol (Video Dialog)</h3>
@@ -260,10 +296,23 @@
                     <p class="mt-4">Kuncinya ada di prompt lo. Lo harus jelasin <strong class="text-teal-300">apa yang diucapin, gimana nadanya, dan apa logatnya</strong>.</p>
                     <div class="pro-tip mt-4">
                         <p class="font-bold text-indigo-300 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3-3-4"/><path d="M12 22a7 7 0 0 1-7-7c0-2 1-3 3-4"/><path d="M15 13a3 3 0 1 1-6 0c0-2 3-5 3-5s3 3 3 5z"/><path d="M10.1 9.1a2 2 0 1 0 3.8 0"/></svg>Contoh Prompt Dialog dengan Logat</p>
+                        
                         <p class="mt-2 text-sm text-white font-semibold">Prompt Nenek Betawi:</p>
-                        <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm mt-1"><code class="language-text">Hyperrealistic video, action movie style. An elderly Indonesian grandmother, wearing a traditional kebaya and sarong over full skydiving gear with a helmet, stands at the open door of a skydiving plane. She looks annoyed and shouts in Indonesian with a Betawi accent, "Gila ni si Andrie, gua udah tua gini disuruh terjun payung, emang sih ini cuma prompt, tapi capek njir!". Then, she jumps out of the plane.</code></pre>
+                        <div class="relative mt-1">
+                            <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            </button>
+                            <pre class="prompt-box"><code class="language-text">Hyperrealistic video, action movie style. An elderly Indonesian grandmother, wearing a traditional kebaya and sarong over full skydiving gear with a helmet, stands at the open door of a skydiving plane. She looks annoyed and shouts in Indonesian with a Betawi accent, "Gila ni si Andrie, gua udah tua gini disuruh terjun payung, emang sih ini cuma prompt, tapi capek njir!". Then, she jumps out of the plane.</code></pre>
+                        </div>
+                        
                         <p class="mt-4 text-sm text-white font-semibold">Prompt Tukang Nasgor Logat Jawa:</p>
-                        <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm mt-1"><code class="language-text">...he speaks directly to someone just off-camera. He delivers his lines with a convincing and earnest tone, in Indonesian with a clear Javanese dialect: "Nih info cuan 2025, cuma pake AI, kamu bisa jadi jutawan, si Andrie sudah membuktikan. Ketik "Mau Dong" di kolom komentar kalo mau tau gimana caranya. Buruan!"</code></pre>
+                        <div class="relative mt-1">
+                             <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            </button>
+                            <pre class="prompt-box"><code class="language-text">...he speaks directly to someone just off-camera. He delivers his lines with a convincing and earnest tone, in Indonesian with a clear Javanese dialect: "Nih info cuan 2025, cuma pake AI, kamu bisa jadi jutawan, si Andrie sudah membuktikan. Ketik "Mau Dong" di kolom komentar kalo mau tau gimana caranya. Buruan!"</code></pre>
+                        </div>
+                        
                         <p class="mt-2 text-sm">Dengan ngasih detail <strong class="text-white">"...with a Betawi accent"</strong> atau <strong class="text-white">"...with a clear Javanese dialect"</strong>, lo ngasih tau AI buat nge-render gerakan mulut dan ekspresi yang sesuai dengan logat itu. Hasilnya jadi lebih natural dan believable.</p>
                     </div>
 
@@ -278,11 +327,141 @@
                             <li><strong>Deskripsi Kunci (The Golden Prompt):</strong> `Adit, a handsome 25-year-old Indonesian man with stylish comma hair, wearing thin round glasses, a plain white t-shirt, and a blue denim jacket.`</li>
                         </ul>
                          <p class="mt-2 font-semibold">2. Terapkan di Setiap Prompt:</p>
+                         
                          <p class="mt-1 font-semibold text-white">Prompt Klip 1 (di Kafe):</p>
-                         <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm mt-1"><code class="language-text">Medium shot of `Adit, a handsome 25-year-old Indonesian man with stylish comma hair, wearing thin round glasses, a plain white t-shirt, and a blue denim jacket`, sitting in a modern coffee shop, smiling while looking at his laptop. Cinematic, warm lighting.</code></pre>
+                         <div class="relative mt-1">
+                             <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            </button>
+                             <pre class="prompt-box"><code class="language-text">Medium shot of `Adit, a handsome 25-year-old Indonesian man with stylish comma hair, wearing thin round glasses, a plain white t-shirt, and a blue denim jacket`, sitting in a modern coffee shop, smiling while looking at his laptop. Cinematic, warm lighting.</code></pre>
+                         </div>
+                         
                          <p class="mt-2 font-semibold text-white">Prompt Klip 2 (di Jalan):</p>
-                         <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm mt-1"><code class="language-text">Full shot of `Adit, a handsome 25-year-old Indonesian man with stylish comma hair, wearing thin round glasses, a plain white t-shirt, and a blue denim jacket`, walking confidently across a city crosswalk at night, with neon lights in the background.</code></pre>
+                         <div class="relative mt-1">
+                             <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            </button>
+                             <pre class="prompt-box"><code class="language-text">Full shot of `Adit, a handsome 25-year-old Indonesian man with stylish comma hair, wearing thin round glasses, a plain white t-shirt, and a blue denim jacket`, walking confidently across a city crosswalk at night, with neon lights in the background.</code></pre>
+                         </div>
                          <p class="text-sm mt-2">Dengan nyalin-tempel deskripsi kunci itu, Veo bakal ngenalin dan nge-render karakter yang sama di setiap video. Hasilnya? Brand klien lo jadi kuat dan konsisten.</p>
+                    </div>
+
+                    <div class="pro-tip mt-8">
+                        <p class="font-bold text-indigo-300 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17.5a4.5 4.5 0 0 0 0-9 4.5 4.5 0 0 0 0 9z"/><path d="M17 17.5s-2-2.5-5-2.5-5 2.5-5 2.5"/><path d="m14 8 .5-1 .5 1"/><path d="m10 8 .5-1 .5 1"/></svg>Studi Kasus Tambahan: Lebih dari Sekadar Manusia</p>
+                        <p class="mt-2">Prinsip yang sama berlaku buat objek, produk, atau gaya visual. Kuncinya adalah <strong class="text-white">deskripsi yang spesifik dan konsisten</strong>.</p>
+                        
+                        <ol class="space-y-4 mt-4">
+                            <!-- Case 1: Produk Kopi -->
+                            <li>
+                                <p class="font-semibold text-white">1. Produk Kopi "Senja Merona"</p>
+                                <p class="text-xs text-gray-400">Untuk brand kopi yang mau semua visual produknya seragam.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">The "Senja Merona" signature coffee, an iced latte in a tall, minimalist glass cup with a gold rim. The coffee has distinct layers: dark espresso at the bottom, creamy milk in the middle, and a layer of light foam on top, garnished with a single roasted coffee bean.</code></pre>
+                                </div>
+                            </li>
+                            <!-- Case 2: Maskot Robot -->
+                            <li>
+                                <p class="font-semibold text-white">2. Maskot Robot "Cybro"</p>
+                                <p class="text-xs text-gray-400">Untuk perusahaan teknologi yang butuh maskot futuristik.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">Cybro, a small, friendly robot with a polished white chrome body and teal-colored glowing joints. Its head is a simple sphere with a single, large digital eye that displays various emoticons. It has two floating hands but no arms.</code></pre>
+                                </div>
+                            </li>
+                            <!-- Case 3: Gaya Animasi -->
+                            <li>
+                                <p class="font-semibold text-white">3. Gaya Animasi "Cerita Nusantara"</p>
+                                <p class="text-xs text-gray-400">Untuk channel YouTube yang mau punya gaya visual khas.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">In the "Cerita Nusantara" art style, a 2D animation with thick, rough outlines and a textured, watercolor-like fill. The color palette is warm and earthy, dominated by brown, orange, and deep green. Characters have simple features but expressive body language.</code></pre>
+                                </div>
+                            </li>
+                            <!-- Case 4: Tas Kulit -->
+                            <li>
+                                <p class="font-semibold text-white">4. Tas Ransel Kulit "Kembara"</p>
+                                <p class="text-xs text-gray-400">Untuk brand aksesoris outdoor & travel.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">The "Kembara" backpack, a vintage-style rolltop backpack made of rugged, dark brown full-grain leather. It features two large front pockets with brass buckle closures and visible, thick stitching.</code></pre>
+                                </div>
+                            </li>
+                            <!-- Case 5: Sepatu Sneakers -->
+                            <li>
+                                <p class="font-semibold text-white">5. Sneakers "Langkah Awan"</p>
+                                <p class="text-xs text-gray-400">Untuk brand sepatu lifestyle yang menyasar anak muda.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">The "Langkah Awan" sneakers, a pair of chunky-soled sneakers with a clean white base. It has iridescent, holographic panels on the sides and heel, with oversized, puffy laces in a pastel rainbow color.</code></pre>
+                                </div>
+                            </li>
+                            <!-- Case 6: Jurnalis Wanita -->
+                            <li>
+                                <p class="font-semibold text-white">6. Jurnalis Wanita "Ratih"</p>
+                                <p class="text-xs text-gray-400">Untuk channel berita atau dokumenter.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">Ratih, an sharp Indonesian female journalist in her late 30s. She has a confident posture, with her black hair tied in a neat, professional bun. She wears a crisp navy blue blazer over a white shirt and always carries a small, worn leather-bound notebook.</code></pre>
+                                </div>
+                            </li>
+                            <!-- Case 7: Mobil Listrik Konsep -->
+                            <li>
+                                <p class="font-semibold text-white">7. Mobil Listrik Konsep "Kilat"</p>
+                                <p class="text-xs text-gray-400">Untuk visualisasi produk otomotif masa depan.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">The "Kilat" concept EV, a sleek, low-profile electric sports car. Its body is made of a matte carbon fiber material, with a single, continuous line of bright yellow neon light that runs from the front grille, over the roof, to the rear spoiler.</code></pre>
+                                </div>
+                            </li>
+                             <!-- Case 8: Karakter Game Fantasy -->
+                            <li>
+                                <p class="font-semibold text-white">8. Ksatria Elang "Gavin"</p>
+                                <p class="text-xs text-gray-400">Untuk materi promosi game atau cerita fantasi.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">Gavin the Eagle Knight, a tall warrior wearing ornate silver armor engraved with feather motifs. His helmet is shaped like an eagle's head, and a majestic cape made of giant eagle feathers flows behind him. He has a stern expression and a scar over his left eye.</code></pre>
+                                </div>
+                            </li>
+                            <!-- Case 9: Setting Interior -->
+                            <li>
+                                <p class="font-semibold text-white">9. Gaya Interior "Japandi Tenang"</p>
+                                <p class="text-xs text-gray-400">Untuk iklan properti atau desainer interior.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">A room decorated in the "Japandi Tenang" interior style, featuring minimalist light wood furniture, walls painted in a soft beige color, and simple, clean lines. Natural light floods the room through a large window with a thin white curtain. A single, large, leafy green plant sits in a ceramic pot in the corner.</code></pre>
+                                </div>
+                            </li>
+                             <!-- Case 10: Skincare Packaging -->
+                            <li>
+                                <p class="font-semibold text-white">10. Botol Serum "Embun Pagi"</p>
+                                <p class="text-xs text-gray-400">Untuk brand skincare natural dan organik.</p>
+                                <div class="relative mt-1">
+                                    <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    </button>
+                                    <pre class="prompt-box"><code class="language-text">The "Embun Pagi" serum, presented in a small, frosted glass bottle with a bamboo dropper cap. The bottle has a simple white label with minimalist green text. A few droplets of morning dew are visible on the outside of the bottle.</code></pre>
+                                </div>
+                            </li>
+                        </ol>
                     </div>
 
                     <h3 class="text-xl font-semibold !mt-8">Kamus Sakti Videografer AI: Contek Abis!</h3>
@@ -343,31 +522,76 @@
                      <p>Teori doang gak cukup. Ini dia kumpulan prompt nyata yang udah terbukti ngasilin video keren. Pelajarin polanya, modifikasi, dan pake buat proyek lo sendiri. Anggap ini "contekan" premium dari gue.</p>
                      
                      <h3 class="text-xl font-semibold">1. BUNGA & MAWAR MAU KOPI DUDA</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">Hyperrealistic video with cinematic indoor lighting. The scene is set in a modern, cozy living room at night. Two beautiful young Indonesian women, Bunga and Mawar, are lounging casually on a comfortable sofa. Mawar (utama): (Consistent with saved data: an 18-year-old Indonesian woman, 170 cm tall with a tight and proportionally curvy figure, featuring proportional and firm chest and flawless fair skin. Her hair is long, soft blonde with subtle curls. She has defined Indonesian facial features with polished modern makeup) is wearing a stylish white oversize t-shirt and ripped jeans. She has a playful and mischievous expression. Bunga: (Consistent with saved data: an 18-year-old Indonesian woman, 165cm tall with a proportional figure and a proportional and firm chest. She has sawo matang skin and shoulder-length wavy black bob hair with trendy makeup) is wearing a stylish maroon oversize t-shirt and ripped jeans. She looks bored and restless. The conversation unfolds with natural pacing and authentic 'Jaksel' (South Jakarta) accents: Bunga sighs dramatically and looks at Mawar, saying with a tone of boredom: "Duh bosen ni gue, kita kemana yuk, bisa kali!". Mawar turns to her with a sly smile, her eyes glinting with a provocative idea. She replies coolly: "Kita cari duda aja yuk, seger ni malem malem gini ama duda.". Bunga's expression instantly changes to wide-eyed shock and disbelief. She sits up straight and exclaims: "Njir, duda apaan? Seriusan?". Mawar simply gives a confident, reassuring smirk and gestures slightly as if to get up, saying definitively: "Udah, ikut aja.". The camera work focuses on their dynamic facial expressions, capturing Bunga's shift from boredom to shock, and Mawar's consistently teasing and confident demeanor.</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">Hyperrealistic video with cinematic indoor lighting. The scene is set in a modern, cozy living room at night. Two beautiful young Indonesian women, Bunga and Mawar, are lounging casually on a comfortable sofa. Mawar (utama): (Consistent with saved data: an 18-year-old Indonesian woman, 170 cm tall with a tight and proportionally curvy figure, featuring proportional and firm chest and flawless fair skin. Her hair is long, soft blonde with subtle curls. She has defined Indonesian facial features with polished modern makeup) is wearing a stylish white oversize t-shirt and ripped jeans. She has a playful and mischievous expression. Bunga: (Consistent with saved data: an 18-year-old Indonesian woman, 165cm tall with a proportional figure and a proportional and firm chest. She has sawo matang skin and shoulder-length wavy black bob hair with trendy makeup) is wearing a stylish maroon oversize t-shirt and ripped jeans. She looks bored and restless. The conversation unfolds with natural pacing and authentic 'Jaksel' (South Jakarta) accents: Bunga sighs dramatically and looks at Mawar, saying with a tone of boredom: "Duh bosen ni gue, kita kemana yuk, bisa kali!". Mawar turns to her with a sly smile, her eyes glinting with a provocative idea. She replies coolly: "Kita cari duda aja yuk, seger ni malem malem gini ama duda.". Bunga's expression instantly changes to wide-eyed shock and disbelief. She sits up straight and exclaims: "Njir, duda apaan? Seriusan?". Mawar simply gives a confident, reassuring smirk and gestures slightly as if to get up, saying definitively: "Udah, ikut aja.". The camera work focuses on their dynamic facial expressions, capturing Bunga's shift from boredom to shock, and Mawar's consistently teasing and confident demeanor.</code></pre>
+                    </div>
 
                      <h3 class="text-xl font-semibold">2. TUKANG NASI GORENG INFO CUAN</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">Hyperrealistic video, shot from a medium side-profile angle, focusing on an Indonesian street food vendor on a bustling Jakarta roadside at night. The vendor, a middle-aged Indonesian man, is skillfully cooking Nasi Goreng on a traditional, well-used 'gerobak' (food cart). The cart is authentically detailed with various ingredient containers, bottles of sauces, and a fiery, high-pressure stove. While expertly tossing the rice and ingredients in a large wok, he speaks directly to someone just off-camera (as if talking to a customer). He delivers his lines with a convincing and earnest tone, in Indonesian with a clear Javanese dialect: "Nih info cuan 2025, cuma pake AI, kamu bisa jadi jutawan, si Andrie sudah membuktikan. Ketik "Mau Dong" di kolom komentar kalo mau tau gimana caranya. Buruan!". The sound design is immersive and detailed: the loud, rhythmic clanging of the metal spatula in the wok, the intense roar of the stove's flame, and the sizzling of the food are all clearly audible. In the background, the ambient sounds of passing Jakarta traffic (motorbikes, cars) complete the atmosphere.</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">Hyperrealistic video, shot from a medium side-profile angle, focusing on an Indonesian street food vendor on a bustling Jakarta roadside at night. The vendor, a middle-aged Indonesian man, is skillfully cooking Nasi Goreng on a traditional, well-used 'gerobak' (food cart). The cart is authentically detailed with various ingredient containers, bottles of sauces, and a fiery, high-pressure stove. While expertly tossing the rice and ingredients in a large wok, he speaks directly to someone just off-camera (as if talking to a customer). He delivers his lines with a convincing and earnest tone, in Indonesian with a clear Javanese dialect: "Nih info cuan 2025, cuma pake AI, kamu bisa jadi jutawan, si Andrie sudah membuktikan. Ketik "Mau Dong" di kolom komentar kalo mau tau gimana caranya. Buruan!". The sound design is immersive and detailed: the loud, rhythmic clanging of the metal spatula in the wok, the intense roar of the stove's flame, and the sizzling of the food are all clearly audible. In the background, the ambient sounds of passing Jakarta traffic (motorbikes, cars) complete the atmosphere.</code></pre>
+                    </div>
 
                      <h3 class="text-xl font-semibold">3. MAWAR PROMOSI KOPI DUDA (Untuk Sosmed)</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">"Generate a hyper-realistic, cinematic 8K video in a vertical (9:16) aspect ratio, suitable for social media platforms like TikTok, Reels, or Shorts. The scene is a medium close-up of Mawar (utama) standing in front of a brightly lit and trendy 'Kopi Duda' coffee storefront at night. Mawar, an 18-year-old Indonesian woman (170cm tall, fair skin, with a tight and proportionally curvy figure featuring a proportional and firm chest, long soft wavy blonde hair, and flawless modern makeup), is wearing a stylish white oversize t-shirt and ripped jeans. She holds a detailed 'Kopi Duda' iced coffee cup (clear plastic, layered, with a black silhouette logo of a bearded man with glasses, 'KOPI DUDA' text, and 'PINDAH KE LAIN HATI' tagline). The video unfolds as she speaks directly and charismatically to the camera in a natural South Jakarta Indonesian accent: first, she smiles confidently and points a thumb at herself, saying, 'Ini semua enggak asli, gue hasil dari AI,' then she presents the coffee cup clearly to the camera, adding enthusiastically, '...bahkan kopi duda ini pun made by AI lho.' She then adopts a persuasive, inspiring tone, gesturing openly, 'Lo juga bisa buat video iklan gini, dan bisa dapetin cuan jutaan dari sini.' Finally, she gives an intense, inviting look directly into the camera for a powerful call to action, 'Komen 'Mau' kalo lo mau tau caranya!' and ends the video with a playful wink and a final sip of her coffee. The generation must focus on her dynamic, charismatic expressions, and achieve perfect lip-sync for the specified Indonesian dialogue, all set against the aesthetic, glowing background of the coffee store."</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">"Generate a hyper-realistic, cinematic 8K video in a vertical (9:16) aspect ratio, suitable for social media platforms like TikTok, Reels, or Shorts. The scene is a medium close-up of Mawar (utama) standing in front of a brightly lit and trendy 'Kopi Duda' coffee storefront at night. Mawar, an 18-year-old Indonesian woman (170cm tall, fair skin, with a tight and proportionally curvy figure featuring a proportional and firm chest, long soft wavy blonde hair, and flawless modern makeup), is wearing a stylish white oversize t-shirt and ripped jeans. She holds a detailed 'Kopi Duda' iced coffee cup (clear plastic, layered, with a black silhouette logo of a bearded man with glasses, 'KOPI DUDA' text, and 'PINDAH KE LAIN HATI' tagline). The video unfolds as she speaks directly and charismatically to the camera in a natural South Jakarta Indonesian accent: first, she smiles confidently and points a thumb at herself, saying, 'Ini semua enggak asli, gue hasil dari AI,' then she presents the coffee cup clearly to the camera, adding enthusiastically, '...bahkan kopi duda ini pun made by AI lho.' She then adopts a persuasive, inspiring tone, gesturing openly, 'Lo juga bisa buat video iklan gini, dan bisa dapetin cuan jutaan dari sini.' Finally, she gives an intense, inviting look directly into the camera for a powerful call to action, 'Komen 'Mau' kalo lo mau tau caranya!' and ends the video with a playful wink and a final sip of her coffee. The generation must focus on her dynamic, charismatic expressions, and achieve perfect lip-sync for the specified Indonesian dialogue, all set against the aesthetic, glowing background of the coffee store."</code></pre>
+                    </div>
                      
                      <h3 class="text-xl font-semibold">4. MAWAR DAN BUNGA KOPI DUDA (Scene 2)</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">"Generate a hyper-realistic, cinematic 8K video in a 16:9 aspect ratio, set at the outdoor seating area of a modern and trendy 'Kopi Duda' coffee store at night, with aesthetic lighting from the store and street. The scene features a natural, expressive conversation between two characters at a stylish table under a large cafe umbrella; the table has several cups of 'Kopi Duda' on it... Mawar ... picks up one of the cups and sips her 'Kopi Duda' ... After a sip, she looks at the cup and then at Bunga with an amused look of realization, saying in a natural South Jakarta Indonesian accent, 'Oh jadi ini ni maksud lo si duda ini, ternyata KOPI DUDA ya.'. Bunga ... replies with a playful, teasing smile, 'Iya cuy, enak kan? Duda emang jauh lebih enak, lebih berasa kan.'. The video must capture Bunga laughing heartily after her line, followed by Mawar joining in with genuine, unrestrained laughter..."</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">"Generate a hyper-realistic, cinematic 8K video in a 16:9 aspect ratio, set at the outdoor seating area of a modern and trendy 'Kopi Duda' coffee store at night, with aesthetic lighting from the store and street. The scene features a natural, expressive conversation between two characters at a stylish table under a large cafe umbrella; the table has several cups of 'Kopi Duda' on it... Mawar ... picks up one of the cups and sips her 'Kopi Duda' ... After a sip, she looks at the cup and then at Bunga with an amused look of realization, saying in a natural South Jakarta Indonesian accent, 'Oh jadi ini ni maksud lo si duda ini, ternyata KOPI DUDA ya.'. Bunga ... replies with a playful, teasing smile, 'Iya cuy, enak kan? Duda emang jauh lebih enak, lebih berasa kan.'. The video must capture Bunga laughing heartily after her line, followed by Mawar joining in with genuine, unrestrained laughter..."</code></pre>
+                    </div>
 
                      <h3 class="text-xl font-semibold">5. NENEK SERIES (Scene: Mau Terjun)</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">Hyperrealistic video, action movie style. An elderly Indonesian grandmother, wearing a traditional kebaya and sarong over full skydiving gear with a helmet, stands at the open door of a skydiving plane. A dolly shot follows her as she prepares to jump. She looks annoyed and shouts in Indonesian with a Betawi accent, "Gila ni si Andrie, gua udah tua gini disuruh terjun payung, emang sih ini cuma prompt, tapi capek njir!". Then, she jumps out of the plane, screaming...</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">Hyperrealistic video, action movie style. An elderly Indonesian grandmother, wearing a traditional kebaya and sarong over full skydiving gear with a helmet, stands at the open door of a skydiving plane. A dolly shot follows her as she prepares to jump. She looks annoyed and shouts in Indonesian with a Betawi accent, "Gila ni si Andrie, gua udah tua gini disuruh terjun payung, emang sih ini cuma prompt, tapi capek njir!". Then, she jumps out of the plane, screaming...</code></pre>
+                    </div>
                      
                      <h3 class="text-xl font-semibold">6. NENEK SERIES (Scene: Di Udara)</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">Hyperrealistic video, action movie style, dynamic aerial shot. An elderly Indonesian grandmother is in mid-air, free-falling after a skydive. She wears a traditional kebaya and sarong along with a full skydiving helmet and gear. Her face, cheeks, and clothes are flapping wildly in the intense wind. She looks both annoyed and panicked as she shouts in Indonesian with a Betawi accent, "Woy Andrie, awas aja lo ga nyiapin ambulance di bawah, jantung gua mau copot dri! Emang gila lu!"...</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">Hyperrealistic video, action movie style, dynamic aerial shot. An elderly Indonesian grandmother is in mid-air, free-falling after a skydive. She wears a traditional kebaya and sarong along with a full skydiving helmet and gear. Her face, cheeks, and clothes are flapping wildly in the intense wind. She looks both annoyed and panicked as she shouts in Indonesian with a Betawi accent, "Woy Andrie, awas aja lo ga nyiapin ambulance di bawah, jantung gua mau copot dri! Emang gila lu!"...</code></pre>
+                    </div>
 
                      <h3 class="text-xl font-semibold">7. NENEK SERIES (Scene: Mendarat)</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">Hyperrealistic video, action movie style cinematography. The scene is set in a large, open field. An elderly Indonesian grandmother has just landed from a skydive... Suddenly, Andrie (an Indonesian man with an average build and a slight paunch, wearing his khaki PNS uniform) rushes towards her. He holds a small reporter-style microphone to her face and asks in Indonesian, "Gimana rasanya terjun nek?". The grandmother glares at him, and replies with palpable irritation in her voice: "Andrie, lu kira kira dong, biar cuma prompt, capek juga gua gini, kagak lagi lagi dah gua kayak gini."...</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">Hyperrealistic video, action movie style cinematography. The scene is set in a large, open field. An elderly Indonesian grandmother has just landed from a skydive... Suddenly, Andrie (an Indonesian man with an average build and a slight paunch, wearing his khaki PNS uniform) rushes towards her. He holds a small reporter-style microphone to her face and asks in Indonesian, "Gimana rasanya terjun nek?". The grandmother glares at him, and replies with palpable irritation in her voice: "Andrie, lu kira kira dong, biar cuma prompt, capek juga gua gini, kagak lagi lagi dah gua kayak gini."...</code></pre>
+                    </div>
                      
                      <h3 class="text-xl font-semibold">8. BUNGA, MAWAR & OM ANDRIE</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">Hyperrealistic video, shot in a bright, sunny, and beautiful beach setting. The style is like a candid, high-quality social media clip. Two beautiful young Indonesian women, Mawar and Bunga, are lounging on beach chairs... Bunga ... speaks in a casual Indonesian 'Jaksel' (South Jakarta) accent: "AI udah gila banget sekarang, kita itu enggak real lho."... Mawar ... adds ...: "Kita emang enggak real, yang real cuma sayang kita ke...?"... Mawar and Bunga ... shout loudly and joyfully in unison: "OM ANDRI!"...</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">Hyperrealistic video, shot in a bright, sunny, and beautiful beach setting. The style is like a candid, high-quality social media clip. Two beautiful young Indonesian women, Mawar and Bunga, are lounging on beach chairs... Bunga ... speaks in a casual Indonesian 'Jaksel' (South Jakarta) accent: "AI udah gila banget sekarang, kita itu enggak real lho."... Mawar ... adds ...: "Kita emang enggak real, yang real cuma sayang kita ke...?"... Mawar and Bunga ... shout loudly and joyfully in unison: "OM ANDRI!"...</code></pre>
+                    </div>
                      
                      <h3 class="text-xl font-semibold">9. NENEK & ANDRIE DI GBK</h3>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">A hyperrealistic video with a dynamic cinematography set on the bustling street in front of Jakarta's iconic Gelora Bung Karno (GBK) stadium. An energetic Indonesian grandmother wearing red indonesia national team jersey ... pulls up on a classic Honda Supra motorcycle ... and Shouts at Andrie in a lively indonesian Betawi accent: "Woy Andrie, ngapain lo bengong disini!". Andrie ... replies in standard Indonesian: "Kan mo nonton timnas lawan jepang nek". The GRANDMOTHER retorts playfully ... :"Woilah, nonton timnas di jepang keles, udah buruan ikut gua aja!". Andrie's face lights up with excitement ... "Wah asik juga ni, yaudah gas nek!"...</code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">A hyperrealistic video with a dynamic cinematography set on the bustling street in front of Jakarta's iconic Gelora Bung Karno (GBK) stadium. An energetic Indonesian grandmother wearing red indonesia national team jersey ... pulls up on a classic Honda Supra motorcycle ... and Shouts at Andrie in a lively indonesian Betawi accent: "Woy Andrie, ngapain lo bengong disini!". Andrie ... replies in standard Indonesian: "Kan mo nonton timnas lawan jepang nek". The GRANDMOTHER retorts playfully ... :"Woilah, nonton timnas di jepang keles, udah buruan ikut gua aja!". Andrie's face lights up with excitement ... "Wah asik juga ni, yaudah gas nek!"...</code></pre>
+                    </div>
                  </div>
             </section>
             
@@ -384,30 +608,30 @@
                     <div class="pro-tip">
                         <h3 class="text-xl font-semibold text-indigo-300">Jalan Tol 1: Agensi Video Mikro (The Go-Getter)</h3>
                         <ul class="list-disc list-inside mt-4 space-y-2">
-                           <li><strong>Siapa Target Lo?</strong> UKM, bisnis lokal, coffee shop, barbershop, klinik kecantikan, agen properti di kota lo. Buka Google Maps, mereka semua butuh bantuan.</li>
-                           <li><strong>Produk Lo?</strong> "Paket Konten Booster" seharga Rp 2.5jt. Isinya: 1 video profil utama, 4 video Reels/TikTok, plus bonus 10 IG Story.</li>
-                           <li><strong>Strategi Jualan?</strong> Jangan cuma nawarin. BIKIN dulu 1 video sampel 15 detik buat mereka tanpa diminta. Kirim via DM/email. "Halo, gue suka banget sama [produk lo], iseng bikinin video ini. Kebayang gak kalo medsos lo isinya kayak gini semua?" Dijamin, tingkat closing lo meroket.</li>
-                           <li><strong>Potensi Cuan?</strong> 4 klien sebulan = 10 juta. Kalo udah punya portofolio, tawarin paket retainer bulanan 4 juta. Cuan stabil, bos.</li>
+                            <li><strong>Siapa Target Lo?</strong> UKM, bisnis lokal, coffee shop, barbershop, klinik kecantikan, agen properti di kota lo. Buka Google Maps, mereka semua butuh bantuan.</li>
+                            <li><strong>Produk Lo?</strong> "Paket Konten Booster" seharga Rp 2.5jt. Isinya: 1 video profil utama, 4 video Reels/TikTok, plus bonus 10 IG Story.</li>
+                            <li><strong>Strategi Jualan?</strong> Jangan cuma nawarin. BIKIN dulu 1 video sampel 15 detik buat mereka tanpa diminta. Kirim via DM/email. "Halo, gue suka banget sama [produk lo], iseng bikinin video ini. Kebayang gak kalo medsos lo isinya kayak gini semua?" Dijamin, tingkat closing lo meroket.</li>
+                            <li><strong>Potensi Cuan?</strong> 4 klien sebulan = 10 juta. Kalo udah punya portofolio, tawarin paket retainer bulanan 4 juta. Cuan stabil, bos.</li>
                         </ul>
                     </div>
                     
                     <div class="pro-tip">
                         <h3 class="text-xl font-semibold text-indigo-300">Jalan Tol 2: Peternakan Stok Video Pasif (The Investor)</h3>
                         <ul class="list-disc list-inside mt-4 space-y-2">
-                           <li><strong>Siapa Target Lo?</strong> Kata kunci pencarian global. Pikirin apa yang dibutuhin YouTuber Amerika, agensi iklan Eropa, dll.</li>
-                           <li><strong>Produk Lo?</strong> Klip video 5-20 detik yang super niche. Contoh: "Animasi pergerakan data blockchain", "Drone shot Candi Borobudur saat sunrise", "Aktivitas di lab medis futuristik".</li>
-                           <li><strong>Strategi Jualan?</strong> Unggah secara konsisten ke platform kayak Adobe Stock, Shutterstock, Pond5. Targetin unggah 5-10 video BARU setiap hari.</li>
-                           <li><strong>Potensi Cuan?</strong> Ini maraton. 1000 video di portofolio, masing-masing ngasilin 15rb/bulan = 15 juta/bulan PASIF. Lo tidur, duit ngalir.</li>
+                            <li><strong>Siapa Target Lo?</strong> Kata kunci pencarian global. Pikirin apa yang dibutuhin YouTuber Amerika, agensi iklan Eropa, dll.</li>
+                            <li><strong>Produk Lo?</strong> Klip video 5-20 detik yang super niche. Contoh: "Animasi pergerakan data blockchain", "Drone shot Candi Borobudur saat sunrise", "Aktivitas di lab medis futuristik".</li>
+                            <li><strong>Strategi Jualan?</strong> Unggah secara konsisten ke platform kayak Adobe Stock, Shutterstock, Pond5. Targetin unggah 5-10 video BARU setiap hari.</li>
+                            <li><strong>Potensi Cuan?</strong> Ini maraton. 1000 video di portofolio, masing-masing ngasilin 15rb/bulan = 15 juta/bulan PASIF. Lo tidur, duit ngalir.</li>
                         </ul>
                     </div>
 
                     <div class="pro-tip">
                         <h3 class="text-xl font-semibold text-indigo-300">Jalan Tol 3: Raja Konten "Faceless" (The Publisher)</h3>
                         <ul class="list-disc list-inside mt-4 space-y-2">
-                           <li><strong>Siapa Target Lo?</strong> Audiens dengan minat spesifik. Contoh channel: "Alur Cerita Film 10 Menit", "Deep Dive Geopolitik", "Fakta Sains Aneh".</li>
-                           <li><strong>Produk Lo?</strong> Konten video terjadwal di YouTube/TikTok. Lo jadi produser, sutradara, sekaligus pemilik media.</li>
-                           <li><strong>Strategi Jualan?</strong> Jangan cuma ngandelin AdSense. Pasang link afiliasi, jual produk digital (ebook/template), cari sponsorship.</li>
-                           <li><strong>Potensi Cuan?</strong> Kanal yang sukses bisa dapet gabungan > 50 juta/bulan. Gila, kan?</li>
+                            <li><strong>Siapa Target Lo?</strong> Audiens dengan minat spesifik. Contoh channel: "Alur Cerita Film 10 Menit", "Deep Dive Geopolitik", "Fakta Sains Aneh".</li>
+                            <li><strong>Produk Lo?</strong> Konten video terjadwal di YouTube/TikTok. Lo jadi produser, sutradara, sekaligus pemilik media.</li>
+                            <li><strong>Strategi Jualan?</strong> Jangan cuma ngandelin AdSense. Pasang link afiliasi, jual produk digital (ebook/template), cari sponsorship.</li>
+                            <li><strong>Potensi Cuan?</strong> Kanal yang sukses bisa dapet gabungan > 50 juta/bulan. Gila, kan?</li>
                         </ul>
                     </div>
                     
@@ -467,10 +691,20 @@
                      <p class="font-semibold text-white">Skenario: Klien suka video Adit di kafe, tapi minta diubah jadi di taman kota.</p>
                      
                      <p class="mt-4 font-semibold text-white">Prompt Asli (di Kafe):</p>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">Medium shot of `Adit, a handsome 25-year-old Indonesian man...`, <strong class="text-yellow-400">sitting in a modern coffee shop, smiling while looking at his laptop. Cinematic, warm lighting.</strong></code></pre>
-                     
+                    <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">Medium shot of `Adit, a handsome 25-year-old Indonesian man...`, <strong class="text-yellow-400">sitting in a modern coffee shop, smiling while looking at his laptop. Cinematic, warm lighting.</strong></code></pre>
+                    </div>
+
                      <p class="mt-4 font-semibold text-white">Prompt Revisi (di Taman):</p>
-                     <pre class="prompt-box p-4 rounded-md overflow-x-auto text-sm"><code class="language-text">Medium shot of `Adit, a handsome 25-year-old Indonesian man...`, <strong class="text-green-400">sitting on a park bench under a shady tree, smiling while looking at his phone. Natural sunlight, golden hour.</strong></code></pre>
+                     <div class="relative mt-1">
+                        <button onclick="copyPrompt(this)" class="copy-btn" title="Salin Prompt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <pre class="prompt-box"><code class="language-text">Medium shot of `Adit, a handsome 25-year-old Indonesian man...`, <strong class="text-green-400">sitting on a park bench under a shady tree, smiling while looking at his phone. Natural sunlight, golden hour.</strong></code></pre>
+                    </div>
                     <p class="mt-2 text-sm">Lihat polanya? "Prompt Kuncian" karakter Adit gak diubah sama sekali. Lo cuma ganti bagian <strong class="text-yellow-400">Konteks</strong> dan <strong class="text-yellow-400">Aksi</strong> nya aja. Ini nunjukkin ke klien kalo lo ngerti cara kerja alatnya, bukan cuma asal generate.</p>
                     
                     <div class="pro-tip mt-6">
@@ -489,40 +723,40 @@
                     Chapter 7: Manajemen Risiko & Cara Cerdas Eskalasi Bisnis
                  </h2>
                  <div class="space-y-6 text-gray-300 leading-relaxed">
-                    <p>Jadi jutawan itu bukan cuma soal nyari duit, tapi juga soal ngelola risiko dan tau kapan harus naik level. Jangan sampe lo stuck.</p>
-                    
-                    <h3 class="text-xl font-semibold">Manajemen Risiko (Jangan Sampe Boncos)</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li><strong>Risiko: Limit Generate dari Google.</strong> Akun pro sekalipun ada batasnya.
-                            <br><strong>Solusi:</strong> Jangan janjiin revisi tanpa batas ke klien. Jual dalam bentuk paket (misal: maks 3x revisi minor). Punya akun cadangan kalo perlu garap banyak proyek.</li>
-                        <li><strong>Risiko: Ketergantungan pada VPN.</strong> Kalo VPN lo mati, kerjaan mandek.
-                            <br><strong>Solusi:</strong> Langganan VPN premium yang stabil. Punya 2 provider VPN berbeda sebagai cadangan.</li>
-                        <li><strong>Risiko: AI Belum Sempurna.</strong> Kadang hasil masih aneh (jari tangan lebih, teks ngaco).
-                            <br><strong>Solusi:</strong> Jujur ke klien soal batasan AI. Tawarkan solusi kreatif. "Teksnya kita tambahin manual aja ya di post-pro, biar rapi." Ini malah nunjukkin lo profesional.</li>
-                    </ul>
+                     <p>Jadi jutawan itu bukan cuma soal nyari duit, tapi juga soal ngelola risiko dan tau kapan harus naik level. Jangan sampe lo stuck.</p>
+                     
+                     <h3 class="text-xl font-semibold">Manajemen Risiko (Jangan Sampe Boncos)</h3>
+                     <ul class="list-disc list-inside space-y-2">
+                         <li><strong>Risiko: Limit Generate dari Google.</strong> Akun pro sekalipun ada batasnya.
+                             <br><strong>Solusi:</strong> Jangan janjiin revisi tanpa batas ke klien. Jual dalam bentuk paket (misal: maks 3x revisi minor). Punya akun cadangan kalo perlu garap banyak proyek.</li>
+                         <li><strong>Risiko: Ketergantungan pada VPN.</strong> Kalo VPN lo mati, kerjaan mandek.
+                             <br><strong>Solusi:</strong> Langganan VPN premium yang stabil. Punya 2 provider VPN berbeda sebagai cadangan.</li>
+                         <li><strong>Risiko: AI Belum Sempurna.</strong> Kadang hasil masih aneh (jari tangan lebih, teks ngaco).
+                             <br><strong>Solusi:</strong> Jujur ke klien soal batasan AI. Tawarkan solusi kreatif. "Teksnya kita tambahin manual aja ya di post-pro, biar rapi." Ini malah nunjukkin lo profesional.</li>
+                     </ul>
 
-                    <h3 class="text-xl font-semibold !mt-8">Kapan Waktunya Naik Kelas?</h3>
-                    <div class="pro-tip">
-                        <p class="font-bold text-indigo-300 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12s2.545-5 7-5c4.454 0 7 5 7 5s-2.546 5-7 5c-4.455 0-7-5-7-5z"/><path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M20.94 11c.14.32.26.66.26 1s-.12.68-.26 1"/><path d="M3.06 11a9.5 9.5 0 0 1 .26-1"/></svg>Tanda-tanda Lo Harus Eskalasi:</p>
-                        <ul class="list-disc list-inside mt-2 text-sm space-y-2">
-                            <li><strong>Jadwal Lo Penuh Terus:</strong> Kalo lo udah sering nolak klien karena gak ada waktu, ini saatnya <strong class="text-white">naikkan harga</strong> 20-30%.</li>
-                            <li><strong>Lo Ngerjain Tugas Repetitif:</strong> Udah bosen ngurusin admin, email, atau editing dasar? Saatnya <strong class="text-white">sewa Virtual Assistant (VA)</strong>. Fokusin waktu lo buat kerjaan kreatif yang ngasilin duit gede.</li>
-                            <li><strong>Portofolio Udah Keren:</strong> Kalo hasil karya lo udah jauh lebih bagus dari 6 bulan lalu, jangan pake harga lama. <strong class="text-white">Perbarui pricelist lo</strong> setiap kuartal.</li>
-                            <li><strong>Orang Mulai Ngenalin Gaya Lo:</strong> Saatnya <strong class="text-white">bangun personal brand</strong>. Aktif di Twitter/LinkedIn, share tips, tunjukkin proses di balik layar. Klien high-ticket bakal dateng sendiri.</li>
-                        </ul>
-                    </div>
+                     <h3 class="text-xl font-semibold !mt-8">Kapan Waktunya Naik Kelas?</h3>
+                     <div class="pro-tip">
+                         <p class="font-bold text-indigo-300 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12s2.545-5 7-5c4.454 0 7 5 7 5s-2.546 5-7 5c-4.455 0-7-5-7-5z"/><path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M20.94 11c.14.32.26.66.26 1s-.12.68-.26 1"/><path d="M3.06 11a9.5 9.5 0 0 1 .26-1"/></svg>Tanda-tanda Lo Harus Eskalasi:</p>
+                         <ul class="list-disc list-inside mt-2 text-sm space-y-2">
+                             <li><strong>Jadwal Lo Penuh Terus:</strong> Kalo lo udah sering nolak klien karena gak ada waktu, ini saatnya <strong class="text-white">naikkan harga</strong> 20-30%.</li>
+                             <li><strong>Lo Ngerjain Tugas Repetitif:</strong> Udah bosen ngurusin admin, email, atau editing dasar? Saatnya <strong class="text-white">sewa Virtual Assistant (VA)</strong>. Fokusin waktu lo buat kerjaan kreatif yang ngasilin duit gede.</li>
+                             <li><strong>Portofolio Udah Keren:</strong> Kalo hasil karya lo udah jauh lebih bagus dari 6 bulan lalu, jangan pake harga lama. <strong class="text-white">Perbarui pricelist lo</strong> setiap kuartal.</li>
+                             <li><strong>Orang Mulai Ngenalin Gaya Lo:</strong> Saatnya <strong class="text-white">bangun personal brand</strong>. Aktif di Twitter/LinkedIn, share tips, tunjukkin proses di balik layar. Klien high-ticket bakal dateng sendiri.</li>
+                         </ul>
+                     </div>
 
-                    <h3 class="text-xl font-semibold !mt-8">Penutup: Eksekusi Adalah Kunci!</h3>
-                    <p>Gue udah kasih lo petanya, sekopnya, sampe koordinat harta karunnya. Informasi tanpa tindakan itu cuma jadi hiburan. Gak akan ngubah isi rekening lo.</p>
-                    <div class="bg-teal-900/40 border border-teal-500 text-teal-200 p-6 rounded-lg mt-6">
-                        <h4 class="font-bold text-lg text-white">Tantangan 72 Jam dari Gue:</h4>
-                        <ol class="list-decimal list-inside mt-3 space-y-2">
-                            <li><strong>Malam Ini:</strong> Gasken beli akun & aktifin VPN. Generate 5 video pertama lo. Jelek gapapa, yang penting mulai.</li>
-                            <li><strong>Besok Pagi:</strong> Pilih 1 jalan tol dari Bab 5. Cari 3 calon klien di Google Maps/Instagram.</li>
-                            <li><strong>Besok Sore:</strong> Buat 1 video sampel paling keren buat salah satu dari mereka. Terus, kirim email penawaran lo.</li>
-                        </ol>
-                         <p class="mt-4 font-bold">Perjalanan ratusan juta itu dimulai dari satu tombol "Generate" yang lo klik hari ini. Udah, jangan banyak mikir. Gas!</p>
-                    </div>
+                     <h3 class="text-xl font-semibold !mt-8">Penutup: Eksekusi Adalah Kunci!</h3>
+                     <p>Gue udah kasih lo petanya, sekopnya, sampe koordinat harta karunnya. Informasi tanpa tindakan itu cuma jadi hiburan. Gak akan ngubah isi rekening lo.</p>
+                     <div class="bg-teal-900/40 border border-teal-500 text-teal-200 p-6 rounded-lg mt-6">
+                         <h4 class="font-bold text-lg text-white">Tantangan 72 Jam dari Gue:</h4>
+                         <ol class="list-decimal list-inside mt-3 space-y-2">
+                             <li><strong>Malam Ini:</strong> Gasken beli akun & aktifin VPN. Generate 5 video pertama lo. Jelek gapapa, yang penting mulai.</li>
+                             <li><strong>Besok Pagi:</strong> Pilih 1 jalan tol dari Bab 5. Cari 3 calon klien di Google Maps/Instagram.</li>
+                             <li><strong>Besok Sore:</strong> Buat 1 video sampel paling keren buat salah satu dari mereka. Terus, kirim email penawaran lo.</li>
+                         </ol>
+                          <p class="mt-4 font-bold">Perjalanan ratusan juta itu dimulai dari satu tombol "Generate" yang lo klik hari ini. Udah, jangan banyak mikir. Gas!</p>
+                     </div>
                  </div>
             </section>
 
@@ -535,6 +769,60 @@
         </footer>
 
     </div>
+
+    <!-- Copy to Clipboard Script -->
+    <script>
+        function copyPrompt(button) {
+            const pre = button.nextElementSibling;
+            if (!pre || !pre.classList.contains('prompt-box')) {
+                console.error("Could not find prompt-box to copy.");
+                return;
+            }
+            const code = pre.querySelector('code');
+            const textToCopy = code.innerText;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const originalIcon = button.innerHTML;
+                button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M20 6 9 17l-5-5"/></svg>`;
+                button.classList.remove('bg-gray-700/70');
+                button.classList.add('bg-teal-500');
+                button.title = "Tersalin!";
+                
+                setTimeout(() => {
+                    button.innerHTML = originalIcon;
+                    button.classList.remove('bg-teal-500');
+                    button.classList.add('bg-gray-700/70');
+                    button.title = "Salin Prompt";
+                }, 2000);
+            }).catch(err => {
+                console.error('Gagal menyalin teks: ', err);
+                try {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = textToCopy;
+                    textArea.style.position = 'fixed';
+                    textArea.style.top = '-9999px';
+                    textArea.style.left = '-9999px';
+                    document.body.appendChild(textArea);
+                    textArea.focus();
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    
+                    const originalIcon = button.innerHTML;
+                    button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M20 6 9 17l-5-5"/></svg>`;
+                    button.classList.add('bg-teal-500');
+                    button.title = "Tersalin!";
+                    setTimeout(() => {
+                        button.innerHTML = originalIcon;
+                        button.classList.remove('bg-teal-500');
+                        button.title = "Salin Prompt";
+                    }, 2000);
+                } catch (e) {
+                    console.error('Gagal menyalin dengan execCommand: ', e);
+                }
+            });
+        }
+    </script>
 
     <!-- AOS (Animate On Scroll) Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
